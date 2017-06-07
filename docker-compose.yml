@@ -1,0 +1,12 @@
+version: "3"
+services:
+  httpd:
+    restart: on-failure
+    build: .
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - TERM=xterm
+    ports:
+      - "40080:80"
+      - "40022:22"
+                                                                        

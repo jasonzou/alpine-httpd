@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+# Start apache httpd.
+exec /usr/sbin/httpd -DFOREGROUND
+#sleep 3600
